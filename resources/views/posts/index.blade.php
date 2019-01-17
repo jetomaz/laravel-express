@@ -9,8 +9,8 @@
 
         <h3>Comments</h3>
         @foreach($post->comments as $comment)
-            <b>Name : </b> {{ @comment->name}}
-            <b>Comment : </b> {{ @comment->comment}}
+            <b>Name : </b> {{ $comment->name}} <br/>
+            <b>Comment : </b> {{ $comment->comment}}
         @endforeach
         <hr>
     @endforeach
