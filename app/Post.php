@@ -16,6 +16,6 @@ class Post extends Model
     }
 
     public function tags(){
-        return $this->belongstomany('App\Tag');
+        return $this->belongstomany('App\Tag', 'posts_tags');
     }
 }
